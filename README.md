@@ -7,3 +7,6 @@
 4. `s_bubbleSort.js` 冒泡排序
 5. `s_quickSort.js` 快速排序
 6. `changeAB.js` 不实用中间变量实现两个变量互换
+7. `getFibonacci.js` 斐波那契数组
+8. `getMaxProfit.js` 获取数组最大值和最小值的差
+9. `randomString.js` 随机生成指定长度的字符串
