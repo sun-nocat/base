@@ -2,3 +2,4 @@
 
 ## 算法
 1. `checkPalindrom.js` 判断字符串是否回文
+2. `unique.js` 数组去重  
