@@ -6,3 +6,4 @@
 3. `findMaxChar.js` 查找字符串中出现次数最多的字符
 4. `s_bubbleSort.js` 冒泡排序
 5. `s_quickSort.js` 快速排序
+6. `changeAB.js` 不实用中间变量实现两个变量互换
