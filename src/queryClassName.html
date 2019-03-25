@@ -1,0 +1,56 @@
+<!--
+ * @Description: 实现类似getElementByClassName的功能
+ * @Author: sunmingming
+ * @Email: sun_mingming@foxmail.com
+ * @Date: 2019-03-25 08:56:34
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="app">
+        <div class="main">
+                <p>sss</p>
+                <div class="main">mianwo</div>
+        </div>
+    </div>
+    <script>
+console.log(queryClassName('main')) 
+
+/** 
+ * 
+ * 思路
+ * 1. 获取所有的节点
+ * 2. 遍历所有的节点
+ * 3. 将节点的class和用户输入的进行比较，匹配的放入数组中
+*/
+    
+function queryClassName(name) {
+
+    var array = [],
+    //获取所有的dom节点
+    elements = document.getElementsByTagName("*"),
+    length = elements.length,
+    i =0,
+    element;
+
+    //遍历dom节点
+    while (i<length){
+        element = elements[i];
+        //找到class相等的节点，然后保存在数组中
+        if(element.className === name){
+            array.push(element)
+        }
+        i+=1
+    }
+    return array
+}
+    </script>
+</body>
+</html>
